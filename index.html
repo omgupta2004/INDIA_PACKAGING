@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>INDIA PACKAGING</title>
+  <!-- Google Fonts for enhanced typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f4f8;
+  color: #2e2e2e;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header and Branding */
+header {
+  background: linear-gradient(to right, #d0e1ff, #f3d9fa);
+  color: #2e2e2e;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+header .logo {
+  max-width: 180px;
+  height: auto;
+  display: block;
+  margin: 0 auto 0.5rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.8rem;
+}
+
+header p.mission {
+  margin: 0.5rem 0 0;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+/* Sticky Navigation */
+nav {
+  background: linear-gradient(90deg, #c9e4ff, #fde2ff);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+nav ul {
+  margin: 0;
+  padding: 0.75rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #444;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+  color: #ff8a80;
+}
+
+/* Section Styles */
+.section {
+  padding: 2rem 1rem;
+  text-align: center;
+  background: #ffffff;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+  color: #ff8a80;
+  font-size: 2.2rem;
+}
+
+/* Contact */
+.contact a {
+  display: inline-block;
+  color: #4078c0;
+  margin: 0.5rem;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact a:hover {
+  color: #ff8a80;
+  transform: translateY(-3px);
+}
+
+/* About Section */
+.about p {
+  max-width: 800px;
+  margin: 0 auto 1.5rem;
+  font-size: 1.1rem;
+}
+
+/* Box Gallery */
+.box-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.box-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease;
+}
+
+.box-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Customers Section */
+.customers {
+  background: linear-gradient(135deg, #d0e8f2, #fce1e4);
+  padding: 2rem 1rem;
+}
+
+.customers h2 {
+  font-size: 2.4rem;
+  color: #2e2e2e;
+  margin-bottom: 0.5rem;
+}
+
+.customers p {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Map Section */
+.map a {
+  color: #6c9ae3;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.map a:hover {
+  color: #ff8a80;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(90deg, #e2f0ff, #fde2ff);
+  color: #333;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+footer ul li {
+  margin: 0 1rem;
+}
+
+footer ul li a {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #ff8a80;
+}
+
+@media (min-width: 768px) {
+  .box-gallery img {
+    max-width: 100%;
+  }
+}
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #0d1117;
+  color: #c9d1d9;
+}
+
+body.dark-mode header {
+  background: linear-gradient(to right, #1f2a38, #2a1e34);
+}
+
+body.dark-mode nav {
+  background: linear-gradient(90deg, #1e2733, #2d1d2c);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+body.dark-mode nav ul li a {
+  color: #c9d1d9;
+}
+
+body.dark-mode nav ul li a:hover {
+  color: #58a6ff;
+}
+
+body.dark-mode .section {
+  background-color: #161b22;
+}
+
+body.dark-mode .about p,
+body.dark-mode .contact a,
+body.dark-mode .map a,
+body.dark-mode footer,
+body.dark-mode footer ul li a {
+  color: #c9d1d9;
+}
+
+body.dark-mode .customers {
+  background: linear-gradient(135deg, #1b2430, #2c1f25);
+}
+
+body.dark-mode .why-choose {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #30363d;
+}
+
+body.dark-mode h2,
+body.dark-mode h3 {
+  color: #58a6ff;
+}
+
+body.dark-mode a:hover {
+  color: #ff7b72;
+}
+
+body.dark-mode .box-gallery img {
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode footer {
+  background: linear-gradient(90deg, #1f2937, #2a1f35);
+}
+
+body.dark-mode .service-list ul li,
+body.dark-mode .process p,
+body.dark-mode .process ol li {
+  color: #c9d1d9;
+}
+
+body.dark-mode .process h3,
+body.dark-mode .why-choose h3 {
+  color: #f9d349;
+}
+
+body.dark-mode .contact a:hover,
+body.dark-mode .map a:hover,
+body.dark-mode footer ul li a:hover {
+  color: #ff7b72;
+}
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+body.dark-mode .address-line {
+  color: #c9d1d9;
+}
+body.dark-mode header h1 {
+  color: #f0f6fc; /* or use #f0f6fc for a softer white */
+}
+
+/* Dark mode text fixes */
+body.dark-mode header h1,
+body.dark-mode header p,
+body.dark-mode .mission,
+body.dark-mode .address-line {
+  color: #f0f6fc; /* Soft white for readability */
+}
+
+body.dark-mode header {
+  background: linear-gradient(to right, #1a1a1a, #2c2c2c);
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Header with logo and mission statement -->
+  <!-- Header with logo and mission statement -->
+<header>
+  <img src="ind.png" alt="India Packaging Logo" class="logo" />
+  <h1>INDIA PACKAGING</h1>
+  <p class="address-line" style="margin: 0.2rem 0 0.5rem; font-size: 1rem;">
+    13A/219/C-17, Amar Nagar, Shahdara,<br>
+    Agra, Uttar Pradesh 282001, India
+  </p>
+  <p class="mission">Your Trusted Partner in Crafting Premium Cardboard Boxes</p>
+</header>
+
+
+  <!-- Sticky Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#customers">Customers</a></li>
+      <li><a href="#map">Find Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <h2>Contact Us</h2>
+    <a href="tel:+919319842965">📞 Call Us: 9319842965</a>
+    <a href="mailto:nitingupta19473@gmail.com">📧 Email: nitingupta19473@gmail.com</a>
+    <p>You can reach out via call or text.</p>
+  </section>
+
+  <!-- About Us Section with box images -->
+  <!-- About Us Section -->
+<section id="about" class="section about">
+  <h2>About Us</h2>
+  <p style="max-width: 800px; margin: 0 auto 1.2rem; font-size: 1.1rem;">
+    At <strong>INDIA PACKAGING</strong>, we are dedicated to delivering top-tier cardboard box solutions tailored to every business need. With years of experience in the packaging industry, we’ve built a reputation for reliability, innovation, and quality.
+  </p>
+
+  <p style="max-width: 800px; margin: 0 auto 1.5rem; font-size: 1.1rem;">
+    We specialize in a wide range of corrugated boxes — from sturdy <strong>3-ply</strong> to heavy-duty <strong>9-ply</strong> options. Whether you're looking for vibrant printed boxes or sleek plain cardboard finishes, we offer both customizable and ready-to-use designs to suit your brand.
+  </p>
+
+  <div class="why-choose" style="background: rgba(255,255,255,0.05); padding: 1rem; border-radius: 10px; max-width: 800px; margin: 2rem auto;">
+    <h3 style="color: #fdbb2d;">Why Choose Us?</h3>
+    <ul style="list-style: none; padding: 0; margin-top: 1rem; font-size: 1.05rem;">
+      <li>✅ 100% custom solutions for every business</li>
+      <li>✅ High-grade materials with eco-friendly options</li>
+      <li>✅ Trusted by 500+ satisfied customers</li>
+      <li>✅ Fast production and timely delivery</li>
+    </ul>
+  </div>
+
+  <div class="box-gallery" style="margin-top: 2rem;">
+    <img src="box1.png" alt="Cardboard Box Sample 1">
+    <img src="box2.png" alt="Cardboard Box Sample 2">
+    <img src="box3.jpg" alt="Cardboard Box Sample 3">
+    <img src="box4.jpg" alt="Cardboard Box Sample 4">
+    <img src="box5.jpg" alt="Cardboard Box Sample 5">
+    <img src="bx6.jpg" alt="Cardboard Box Sample 6">
+  </div>
+</section>
+
+  
+  <!-- Services Section (Example placeholder) -->
+  <!-- Services Section -->
+<section id="services" class="section">
+  <h2>Our Services</h2>
+  <p>We offer a wide range of services tailored to your packaging needs:</p>
+
+  <div class="service-list" style="max-width: 800px; margin: 2rem auto; text-align: left;">
+    <ul style="list-style: none; padding: 0; font-size: 1.1rem;">
+      <li>📦 Custom Packaging Solutions for Every Industry</li>
+      <li>🧱 High-Quality Cardboard Manufacturing (3-Ply to 9-Ply)</li>
+      <li>🎨 Printed & Plain Boxes as per Your Brand's Needs</li>
+      <li>🌱 Eco-Friendly & Sustainable Materials</li>
+      <li>🚚 Reliable Delivery & Logistics Support</li>
+    </ul>
+  </div>
+
+  <div class="process" style="margin-top: 3rem;">
+    <h3 style="color: #fdbb2d; font-size: 1.5rem;">Our Process</h3>
+    <p style="max-width: 700px; margin: 1rem auto;">
+      From concept to completion, we ensure excellence at every step:
+    </p>
+    <ol style="max-width: 700px; margin: 0 auto; text-align: left; font-size: 1.1rem;">
+      <li>📝 Consultation – Understand your packaging needs</li>
+      <li>🏭 Production – High-quality, precision manufacturing</li>
+      <li>📦 Delivery – Safe and timely shipment to your location</li>
+    </ol>
+  </div>
+
+  <div style="margin-top: 2rem;">
+    <a href="#contact" style="display: inline-block; padding: 0.75rem 1.5rem; background: #2575fc; color: #fff; border-radius: 5px; font-weight: bold; transition: background 0.3s;">
+      📞 Get a Quote
+    </a>
+  </div>
+</section>
+
+  
+  <!-- Customers Section -->
+  <section id="customers" class="customers">
+    <h2>500+ Active Customers</h2>
+    <p>Join our growing family of satisfied clients who trust INDIA PACKAGING for quality and innovation.</p>
+  </section>
+  
+  <!-- Navigation/Location Section -->
+  <section id="map" class="section map">
+    <h2>Find Us</h2>
+    <p>
+      <a href="https://www.google.com/maps/dir/27.2082516,78.0081215/INDIA+PACKAGING,+13A%5C219%5CC-17,+Amar+Nagar,+Shahdara,+Agra,+Uttar+Pradesh+282001/@27.2070875,77.9958106,13z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x3974716871240ad3:0x24fff7f249514790!2m2!1d78.06834!2d27.2093214?entry=ttu&g_ep=EgoyMDI1MDQwMS4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" target="_blank">
+        📍 Get Directions on Google Maps
+      </a>
+    </p>
+  </section>
+  
+  <!-- Footer with quick links -->
+  <footer>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#customers">Customers</a></li>
+      <li><a href="#map">Find Us</a></li>
+    </ul>
+    <p>&copy; 2025 INDIA PACKAGING. All rights reserved.</p>
+  </footer>
+  <!-- Dark Mode Toggle -->
+<div id="darkModeToggle" title="Toggle Dark Mode" style="
+position: fixed;
+bottom: 1.5rem;
+right: 1.5rem;
+background: #fff;
+border-radius: 50%;
+width: 48px;
+height: 48px;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+cursor: pointer;
+transition: transform 0.3s ease;
+z-index: 2000;
+">
+<span id="darkIcon" style="font-size: 1.5rem;">🌙</span>
+</div>
+
+<script>
+const toggleBtn = document.getElementById('darkModeToggle');
+const icon = document.getElementById('darkIcon');
+
+toggleBtn.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  toggleBtn.style.transform = 'rotate(360deg)';
+  setTimeout(() => toggleBtn.style.transform = '', 300);
+
+  icon.textContent = document.body.classList.contains('dark-mode') ? '☀️' : '🌙';
+});
+</script>
+
+</body>
+</html>
